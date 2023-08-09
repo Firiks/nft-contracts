@@ -1,0 +1,15 @@
+{
+  "name": "Plink",
+  "description": "Plink NFT.",
+  "image": "https://ipfs.io/ipfs/QmapFdwhZY4owEgpjmy5zTRih4BKDbNprDMyZxsnwjb6Hv?filename=plink.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Plink"
+    }
+  ]
+}
