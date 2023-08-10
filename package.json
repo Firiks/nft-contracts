@@ -15,10 +15,13 @@
     "size": "npx hardhat size-contracts",
     "coverage": "npx hardhat coverage",
     "test:unit": "npx hardhat test --network hardhat",
+    "deploy:main:local": "npx hardhat deploy --network hardhat --tags main",
     "deploy:basicnft:local": "npx hardhat deploy --network hardhat --tags basicnft,mocks",
     "deploy:randomipfs:local": "npx hardhat deploy --network hardhat --tags randomipfs,mocks",
+    "deploy:main:sepolia": "npx hardhat deploy --network sepolia --tags main",
     "deploy:basicnft:sepolia": "npx hardhat deploy --network sepolia --tags basicnft",
-    "deploy:randomipfs:sepolia": "npx hardhat deploy --network sepolia --tags randomipfs"
+    "deploy:randomipfs:sepolia": "npx hardhat deploy --network sepolia --tags randomipfs",
+    "deploy:mint:sepolia": "npx hardhat deploy --network sepolia --tags mint"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
