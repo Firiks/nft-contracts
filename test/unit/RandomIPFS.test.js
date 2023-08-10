@@ -11,7 +11,7 @@ const { developmentChains } = require("../../helper-hardhat-config");
         let accounts = await ethers.getSigners();
         deployer = accounts[0];
         await deployments.fixture(["mocks", "randomipfs"]);
-        randomIpfsNft = await ethers.getContract("RandomIpfsNft");
+        randomIpfsNft = await ethers.getContract("RandomIpfsNFT");
         vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock");
       });
 

@@ -84,7 +84,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     tokenUris,
   ];
 
-  const randomIpfsNft = await deploy("RandomIpfsNft", {
+  const randomIpfsNft = await deploy("RandomIpfsNFT", {
     from: deployer,
     args: args,
     log: true,
