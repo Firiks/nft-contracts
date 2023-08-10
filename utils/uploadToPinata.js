@@ -39,7 +39,7 @@ async function storeImages(imagesFilePath) {
           console.log(err);
         });
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
   }
 

@@ -42,8 +42,8 @@ const lowTokenUri =
         it("emits an event and creates the NFT", async function () {
           const highValue = ethers.utils.parseEther("1"); // 1 dollar per ether
           await expect(DynamicSvgNFT.mintNft(highValue)).to.emit(
-              DynamicSvgNFT,
-              "CreatedNFT"
+            DynamicSvgNFT,
+            "CreatedNFT"
           );
 
           const tokenCounter = await DynamicSvgNFT.getTokenCounter();
