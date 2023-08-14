@@ -16,4 +16,9 @@ Create NFTs using 3 different contracts:
 4. To run tests: `npx hardhat test:unit`
 5. To run local node with contract deployed run: `npm run chain`
 6. To deploy on testnet: `npm run deploy:main:sepolia` to deploy on sepolia testnet or `deploy:main:local` to deploy on local node
-7. if deployed on sepolia or other testnet navigate to `https://vrf.chain.link` create subscription and add Random IPFS image NFT contract address as consumer
+7. If deployed on sepolia or other testnet navigate to [Chainlink VRF](https://vrf.chain.link) create subscription and add Random IPFS image NFT contract address as consumer and then to mint run `npm run deploy:mint:sepolia`
+8. Testnet nfts can be found on [OpenSea testnet](https://testnets.opensea.io)
+
+## Result
+
+<img src="./data/screenshot/nft-screenshot.png" width="800" />
