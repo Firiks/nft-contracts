@@ -37,9 +37,13 @@ contract DynamicSvgNFT is ERC721, Ownable {
     }
 
     // convert svg to base64 encoded image URI
-    function svgToImageURI(string memory svg) public pure returns (string memory) {
+    function svgToImageURI(
+        string memory svg
+    ) public pure returns (string memory) {
         string memory baseURL = "data:image/svg+xml;base64,";
-        string memory svgBase64Encoded = Base64.encode(bytes(string(abi.encodePacked(svg))));
+        string memory svgBase64Encoded = Base64.encode(
+            bytes(string(abi.encodePacked(svg)))
+        );
         return string(abi.encodePacked(baseURL, svgBase64Encoded));
     }
 
@@ -48,7 +52,9 @@ contract DynamicSvgNFT is ERC721, Ownable {
     }
 
     // get token URI for token, return it as base64 encoded string - this way we minic ipfs
-    function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
+    function tokenURI(
+        uint256 tokenId
+    ) public view virtual override returns (string memory) {
         if (!_exists(tokenId)) {
             revert ERC721Metadata__URI_QueryFor_NonExistentToken();
         }
